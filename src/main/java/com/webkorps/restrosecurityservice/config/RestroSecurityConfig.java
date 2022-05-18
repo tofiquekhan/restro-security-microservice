@@ -30,7 +30,7 @@ private JwtAuthenticationFilter jwtAuthenticationFilter;
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/public/**","/resources/**");
+        web.ignoring().antMatchers("/public/**","/resources/**","/actuator/**");
     }
 
     @Override
